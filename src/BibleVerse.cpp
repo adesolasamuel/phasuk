@@ -1,9 +1,4 @@
 #include "BibleVerse.h"
-#include <time.h>
-#include <stdio.h>
-#include <string>
-#include <sstream>
-#include <map>
 #include <limits>
 #include <iostream>
 
@@ -43,7 +38,7 @@ void BibleVerse::redText()
     if (readBible.is_open())
     {
         srand(time(NULL));
-        BibleVerse::GotoLine(readBible, 1 + rand() % 53);
+        BibleVerse::GotoLine(readBible, 1 + rand() % 2034);
         std::getline(readBible, verse);
         std::cout << verse << "\n";
     }
