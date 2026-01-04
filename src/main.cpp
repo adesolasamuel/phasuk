@@ -1,7 +1,7 @@
 // phasuk is the hebrew translation of verses. phasuk gives you random verses from the new testament
 // USAGE
-// phasuk: random verse from all of the new testament
-// phasuk Jesus: a random word of Jesus Christ
+// phasuk: verse from all of the new testament
+// phasuk Jesus: a word of Jesus Christ
 
 #include <string>
 #include <iostream>
@@ -11,8 +11,10 @@ BibleVerse bibleapp;
 
 void help()
 {
-    std::cout << "phasuk\n";
-    std::cout << "phasuk Jesus - words of christ\n";
+    std::cout << "phasuk - means Bible verses\n";
+    std::cout << "USAGE: \n";
+    std::cout << "phasuk - a word of God from the New Testament for you\n";
+    std::cout << "phasuk Jesus - words Jesus Christ from the New Testament for you\n";
 }
 
 int main(int argc, char *argv[])
