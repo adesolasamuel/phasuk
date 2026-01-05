@@ -18,7 +18,7 @@ std::fstream &BibleVerse::GotoLine(std::fstream &file, unsigned int num)
 
 void BibleVerse::all()
 {
-    readBible.open("Bible/BibleNewTestament.txt", std::ios::in);
+    readBible.open("./Bible/BibleNewTestament.txt", std::ios::in);
     if (readBible.is_open())
     {
         srand(time(NULL));
@@ -34,7 +34,7 @@ void BibleVerse::all()
 
 void BibleVerse::redText()
 {
-    readBible.open("Bible/BibleNewTestamentRedText.txt", std::ios::in);
+    readBible.open("./Bible/BibleNewTestamentRedText.txt", std::ios::in);
     if (readBible.is_open())
     {
         srand(time(NULL));
