@@ -23,7 +23,6 @@ sudo snap install phasuk
 
 <hr style="height: 3px; background-color: #858181ff;">
 
-
 ### Building from Source
 
 1. Clone the repository:
@@ -33,11 +32,26 @@ cd phasuk
 ```
 
 2. Create a build directory and compile:
+### Linux
+```sh
+mkdir build && cd build
+cmake ..
+make
+```
+
+### macOS
+```sh
+mkdir build && cd build
+cmake ..
+make
+```
+
+### Windows
 ```sh
 mkdir build
 cd build
 cmake ..
-make
+cmake --build .
 ```
 
 3. (Optional) Install system-wide:
@@ -91,16 +105,6 @@ phasuk/
 └── README.md
 ```
 
-## How It Works
-
-The application uses the `BibleVerse` class to:
-1. Open the appropriate Bible text file (BibleNewTestament.txt or BibleNewTestamentRedText.txt)
-2. Generate a random line number
-3. Navigate to that line
-4. Display the verse to the user
-
-The red text file contains 2,034 verses spoken by Jesus, while the complete New Testament contains 7,957 verses.
-
 ## Contributing
 
 Contributions are welcome! Here's how you can help:
@@ -111,56 +115,11 @@ Contributions are welcome! Here's how you can help:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-### Contribution Ideas
+### TODO
 
-- Add support for Old Testament verses
-- Include verse references and context
-- Add search functionality for specific topics or keywords
+- Add support for some Old Testament verses
 - Implement verse bookmarking or favorites
-- Add different Bible translations
-- Create a GUI version
 - Add internationalization support
-
-## File Formats
-
-The Bible text files use a simple format:
-```
-Book Chapter:Verse	Verse text...
-```
-
-Example:
-```
-John 3:16	For God so loved the world, that he gave his only begotten Son...
-```
-
-## License
-
-This project is open source. Please ensure compliance with copyright laws regarding Bible text distribution.
-
-
-## Building on Different Platforms
-
-### Linux
-```sh
-mkdir build && cd build
-cmake ..
-make
-```
-
-### macOS
-```sh
-mkdir build && cd build
-cmake ..
-make
-```
-
-### Windows
-```sh
-mkdir build
-cd build
-cmake ..
-cmake --build .
-```
 
 ## Troubleshooting
 
