@@ -12,11 +12,17 @@
 
 ## Installation
 
-### Prerequisites
+### Debian or Ubuntu-based Distros
 
-- CMake 3.20 or higher
-- C++ compiler with C++20 support
-- Git (for cloning the repository)
+### Snap
+
+```
+sudo snap install phasuk
+```
+[![Get it from the Snap Store](https://snapcraft.io/en/dark/install.svg)](https://snapcraft.io/phasuk)
+
+<hr style="height: 3px; background-color: #858181ff;">
+
 
 ### Building from Source
 
@@ -38,8 +44,9 @@ make
 ```sh
 sudo make install
 ```
+<hr style="height: 3px; background-color: #858181ff;">
 
-## Usage
+## CLI Usage
 
 ### Basic Commands
 
