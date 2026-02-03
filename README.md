@@ -14,7 +14,19 @@
 
 ### Debian or Ubuntu-based Distros
 
-### Snap
+### Option 1: Install from apt
+Execute the following commands in order:
+```
+sudo add-apt-repository ppa:adesolasamuel/phasuk
+```
+```
+sudo apt update
+```
+```
+sudo apt install phasuk
+```
+
+### Option 2: Snap
 
 ```
 sudo snap install phasuk
@@ -23,7 +35,7 @@ sudo snap install phasuk
 
 <hr style="height: 3px; background-color: #858181ff;">
 
-### Building from Source
+### Option 3: Building from Source
 
 1. Clone the repository:
 ```sh
