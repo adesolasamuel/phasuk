@@ -14,7 +14,16 @@
 
 ### Debian or Ubuntu-based Distros
 
-### Option 1: Install from apt
+### Option 1: Snap (Recommended)
+
+```
+sudo snap install phasuk
+```
+[![Get it from the Snap Store](https://snapcraft.io/en/dark/install.svg)](https://snapcraft.io/phasuk)
+
+<hr style="height: 3px; background-color: #858181ff;">
+
+### Option 2: Install from apt
 Execute the following commands in order:
 ```
 sudo add-apt-repository ppa:adesolasamuel/phasuk
@@ -25,15 +34,6 @@ sudo apt update
 ```
 sudo apt install phasuk
 ```
-
-### Option 2: Snap
-
-```
-sudo snap install phasuk
-```
-[![Get it from the Snap Store](https://snapcraft.io/en/dark/install.svg)](https://snapcraft.io/phasuk)
-
-<hr style="height: 3px; background-color: #858181ff;">
 
 ### Option 3: Building from Source
 
